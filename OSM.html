@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oțelăria Siemens-Martin Reșița - Istoric</title>
+    <!-- Incarcarea Tailwind CSS --><script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configurarea fontului Inter --><style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            overflow: hidden; /* Asigura ca nu exista scroll pe pagina principala */
+        }
+        /* Stil actualizat: Culoare #FFC000 (255, 192, 0) fara efect de stralucire */
+        .metallic-text {
+            color: #FFC000; /* Auriu-Portocaliu */
+        }
+        /* Stil pentru a folosi imaginea specificata */
+        .industrial-image-background {
+            background-image: url('https://resita.ro/wp-content/uploads/2022/03/tmk-resita-3.jpg');
+            background-size: cover; /* Acopera intreg spatiul */
+            background-position: center; /* Centreaza imaginea */
+            background-repeat: no-repeat;
+            position: relative; /* Pentru a permite un overlay */
+        }
+        /* Overlay intunecat peste imagine pentru lizibilitatea textului si efect vizual */
+        .industrial-image-background::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            /* Pastram un overlay subtil doar pentru un aspect mai dramatic */
+            background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)); 
+            z-index: 1;
+        }
+    </style>
+</head>
+<body class="bg-black text-gray-300 antialiased">
+
+    <!-- Container principal: Fara scroll si impartit in doua coloane --><div class="flex h-screen w-screen">
+        
+        <!-- Coloana Stanga: Imaginea care ocupa 50% din latime si 100% din inaltime. Textul suprapus a fost eliminat. --><div class="w-1/2 h-full industrial-image-background">
+            <!-- Nu mai exista text suprapus aici. -->
+        </div>
+
+        <!-- Coloana Dreapta: Titlu si Istoric, ocupa 50% din latime --><div class="w-1/2 h-full flex flex-col p-8 md:p-12 lg:p-16">
+            
+            <!-- Titlul Principal --><header class="mb-6">
+                <h1 class="metallic-text text-4xl sm:text-5xl font-extrabold tracking-tight uppercase border-b-2 border-gray-700 pb-2">
+                    Oțelăria Siemens-Martin
+                </h1>
+                <p class="text-xl sm:text-2xl font-light text-gray-500 mt-1">Combinatul Siderurgic Reșița (CSR)</p>
+            </header>
+
+            <!-- Sectiunea de Istoric Detaliat (cu scroll intern minimal, ca fallback, dar textul este dimensionat sa incapa) --><div class="flex-grow text-sm sm:text-base overflow-y-auto pr-2">
+                
+                <p class="mb-4 leading-relaxed">
+                    <span class="metallic-text font-semibold">Oțelăria Siemens-Martin de la Reșița</span> a fost coloana vertebrală a producției de oțel aliat și carbon de înaltă calitate, consolidând statutul Reșiței ca lider siderurgic regional. Tehnologia cuptorului cu vatră deschisă, adoptată la începutul secolului XX, a permis o mare flexibilitate în utilizarea materiei prime (fontă și fier vechi).
+                </p>
+
+                <h2 class="metallic-text text-xl font-bold mt-4 mb-2">Pionierat și Dezvoltare Inițială (1900 - 1948)</h2>
+                <p class="mb-4 leading-relaxed">
+                    Primele cuptoare Siemens-Martin au fost instalate de către Uzinele și Domeniile Reșița (UDR) în jurul anilor **1900-1910**. Acestea erau esențiale pentru asigurarea necesarului de oțel special pentru fabrica de locomotive și atelierele de construcții de mașini. Producția a atins cote maxime în perioadele interbelice și a fost vitală pentru industria de apărare. În perioada antebelică, capacitatea S-M a fost extinsă constant, menținând uzinele în fruntea tehnologiei de profil.
+                </p>
+
+                <h2 class="metallic-text text-xl font-bold mt-4 mb-2">Modernizări Strategice (1950 - Anii '70)</h2>
+                <p class="mb-4 leading-relaxed">
+                    În perioada comunistă, oțelăria S-M a fost modernizată strategic pentru a crește eficiența și a extinde gama de oțeluri. O etapă crucială a fost în **anii '60**, când s-a implementat **injecția de oxigen** pur în cuptoare. Această inovație a redus drastic timpul de topire (de la 8-10 ore la 5-6 ore) și a îmbunătățit calitatea oțelului. De asemenea, au fost modernizate sistemele de încărcare și cele de recuperare a căldurii (regeneratoarele), sporind randamentul energetic al vechii tehnologii.
+                </p>
+
+                <h2 class="metallic-text text-xl font-bold mt-4 mb-2">Sfârșitul unei Ere (Anii '80 - 2000)</h2>
+                <p class="mb-4 leading-relaxed">
+                    Deși modernizată, tehnologia Siemens-Martin a devenit economic neviabilă față de noile **cuptoare electrice cu arc (CEA)**, care ofereau o flexibilitate mai mare, costuri operaționale mai mici și impact ecologic redus. Treptat, în anii '80 și '90, cuptoarele S-M au fost retrase din funcțiune.
+                    Ultima șarjă de oțel produsă prin metoda Siemens-Martin la Reșița a marcat închiderea definitivă a acestei secții la sfârșitul secolului XX, odată cu restructurarea combinatului. Astăzi, rolul major în producția de oțel a fost preluat de unitățile electrice, lăsând cuptoarele S-M ca simbol al patrimoniului industrial.
+                </p>
+                
+            </div>
+            
+        </div>
+
+    </div>
+
+</body>
+</html>
